@@ -8,7 +8,7 @@
         <title>Ohmyfood</title>
     <!--icone-->
         <link rel="icon" href="images/logo/ohmyfood.png" sizes="32x32">
-        <link rel="stylesheet" href="acceuil.css">
+        <link rel="stylesheet" href="styles.css">
         <script src="script.js"></script>
         <script src="https://kit.fontawesome.com/8c0d30b32a.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,33 +19,35 @@
 
     <!--barre de recherche-->
     <img  class="logo" src="images/logo/ohmyfood.png" alt="Logo" /> 
-    <section class="1section"> 
+    
         <div class="recherche">
              <div class="formulaires">
              <p class="p1"><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p>
             </div>
         </div> 
-    
-     <h1><strong>Réserver le menu qui vous convient</strong></h1>
-     <h2>Découvrez des restaurants d'exception,sélectionnés par nos soins.</h2>
-
-     <div class="explorer">Explorer nos restaurants</div>
-
+     <section class="unsection"> 
+         <h1><strong>Réserver le menu qui vous convient</strong></h1>
+         <h2>Découvrez des restaurants d'exception,sélectionnés par nos soins.</h2>
     </section>
+         <div class="explorer">
+            <button>Explorer nos restaurants</button>
+        </div>
+
+    
     <!--balises explicatives-->
-    <section class="2section"> 
+    <section class="deuxsection"> 
 
      <h1><strong>Fonctionnement</strong></h1>
      <ul>
-        <li class="premier choisir"><i class=""></i>Choisissier un restaurant</li>
-        <li class="deuxieme composer"><i class=""></i>Composez votre menu</li>
-        <li class="troiseme déguster"><i class=""></i>Dégustez au restaurant</li>
+        <li class="choisir"><span class="number">1</span><i class="fas fa-mobile-alt"></i><a href="#">Choisissez un restaurant</a></li>
+        <li class="composer"><span class="number">2</span><i class="fas fa-list-ul"></i><a href="#">Composez votre menu</a></li>
+        <li class="déguster"><span class="number">3</span><i class="fas fa-store"></i><a href="#">Dégustez au restaurant</a></li>
      </ul>
     </section>
+
      <!--Restaurant-->
-
-
-     <secion class="3section">
+     
+     <secion class="troissection">
 
         <div id="carte">
          
@@ -97,7 +99,6 @@
 
                         <figure> 
                             <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="repas"/>
-                            <p class="n">Nouveau</p>
                             <figcaption>
                                 <strong>À la française</strong><br />
                                 <span>Cité rouge</span>
@@ -115,7 +116,6 @@
 
                         <figure> 
                             <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="repas"/>
-                            <p class="n">Nouveau</p>
                             <figcaption>
                                 <strong>Le délice des sens</strong><br />
                                 <span>Folie-Méricourt</span>
@@ -135,12 +135,14 @@
 
         <div class="contenu-footer">
 
-            <img  class="logo" src="images/logo/ohmyfood@2x.svg" alt="Logo" />
+            <div class="logo">
+                 <p>ohmyfood</p>
+            </div>     
             <ul class="liste-apropos">
-              <li><a href="#"><i class=""></i>FProposer un restaurant</a></li>
-              <li><a href="#"><i class=""></i>Devenir partenaire</a></li>
-              <li><a href="#">Mentions légales</a></li>
-              <li><a href="#">Contat</a></li>
+              <li class="choixrestaurant"><i class="fas fa-utensils"></i><a href="Restaurant">Proposer un restaurant</a></li>
+              <li class="choixpartenaire"><i class="fas fa-hands-helping"></i><a href="Partenaires">Devenir partenaire</a></li>
+              <li class="choixmention"><a href="#">Mentions légales</a></li>
+              <li class="contact"><a href="mailto:email@example.com">Conctat</a></li>
             </ul>
         </div>
     </footer>  
