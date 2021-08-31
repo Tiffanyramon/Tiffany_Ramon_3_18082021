@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+
+/*version mobile*/
+
 @media screen and (max-width: 750px){
 
     .logooh{
-        width: 180px;
+        width: 180px!important;
         display: block;
-        margin-left: 90px;
+        margin-left: 90px!important;
         margin-right: auto;
         padding-top: 20px;
         padding-bottom: 20px; 
-        height: 35px; 
+        height: 35px!important; 
     }
     .recherche{
         background-color: #eaeaea;
@@ -22,9 +25,15 @@
     
     .p1{
         text-align: center;
-        font-size: 20px;
-        margin-bottom: 21px;
+        font-size: 20px!important;
+        margin-bottom: 21px!important;
         color: #353535;
+    }
+
+    .formulaires a{
+        margin-left: 17px!important;
+        font-family: roboto;
+        font-weight: bolder;
     }
 
     .fa-map-marker-alt{
@@ -41,19 +50,22 @@
 
     .unsection h1{
         text-align: center;
-        font-size: 33px;
-        font-family: roboto-bold;
+        font-size: 28px!important;
+        font-family: roboto;
+        font-weight: 100;
      }
 
     .unsection h2{
         text-align: center;
         font-family: roboto;
-        font-size: 20px;
+        font-size: 18px!important;
+        font-weight: 100;
+        padding-bottom: 10px;
     }
 
     .explorer{
-        background: #F2F2F2;
-        padding-bottom: 20px;
+        background: #f6f6f6;
+        padding-bottom: 53px;
         margin-left: -8px;
         margin-right: -9px;
     }
@@ -65,31 +77,48 @@
         box-shadow: 5px 5px 10px 1px #d3d2d2;
         padding: 15px;
         border-radius: 2rem;
-        font-size: 18px;
+        font-size: 18px!important;
         cursor: pointer;
-        margin-left: 63px;
+        margin-left: 71px!important;
     }
     
     .titre{
-        padding-left: 29px;
-        font-family: Shrikhand;   
+        padding-left: 29px!important;
+        font-family: Shrikhand; 
+        font-size: 20px!important;  
     }
     .titre ul{
+        display: flex!important;
+        flex-direction: column!important;
+        padding-left: 0;
+    }
+
+    .deuxsection ul{
+        padding: 0;
+        margin-left: 1em;
+        margin-right: 1em;
         display: flex;
         flex-direction: column;
-        padding-left: 0;
+    }
+
+    .deuxsection h1{
+        margin-left: 10px!important;
+        font-family: roboto;
+        font-size: 27px!important;
     }
 
     .choisir{
         list-style-type: none;
-        background-color: whitesmoke;
-        border: 0.5px solid whitesmoke;
+        background-color: #f6f6f6;
+        border: 0.5px solid #f6f6f6;
         border-radius: 25px;
         padding-left: 15px;
         padding-bottom: 25px;
         padding-top: 25px;
-        box-shadow: 5px 5px 10px 1px #d3d2d2;
+        box-shadow: 5px 5px 10px 1px #e7e7e7;
         margin-bottom: 20px;
+        width: 100%!important;
+        margin-left: 0!important;
     }
     
     .number{
@@ -103,13 +132,14 @@
     .fa-mobile-alt {
         padding-left: 15px;
         color: #7e7e7e;
+        font-size: 19px!important;
 
       }
 
     .choisir a{
         text-decoration: none;
         padding-left: 33px;
-        font-size: 18px;
+        font-size: 18px!important;
         color: black;
     }
 
@@ -123,17 +153,20 @@
         padding-top: 25px;
         box-shadow: 5px 5px 10px 1px #d3d2d2;
         margin-bottom: 20px;
+        width: 100%!important;
+        margin-left: 0!important;
     }
 
     .fa-list-ul{
         padding-left: 15px;
         color: #7e7e7e;
+        font-size: 19px!important;
     }
 
     .composer a{
         text-decoration: none;
         padding-left: 33px;
-        font-size: 18px;
+        font-size: 18px!important;
         color: black;
     }
 
@@ -147,17 +180,20 @@
         padding-top: 25px;
         box-shadow: 5px 5px 10px 1px #d3d2d2;
         margin-bottom: 62px;
+        width: 100%!important;
+        margin-left: 0!important;
     }
 
     .fa-store{
         padding-left: 15px;
         color: #7e7e7e;
+        font-size: 19px!important;
     }
 
     .déguster a{
         text-decoration: none;
         padding-left: 33px;
-        font-size: 18px;
+        font-size: 18px!important;
         color: black;
     }
 
@@ -168,23 +204,39 @@
     }
 
     .restaurantitre{
-        padding-left: 29px;
-        font-family: Shrikhand;
+        padding-left: 38px;
+        font-family: roboto;
+        padding-top: 20px;
+        font-size: 17px;
     }
     .figure{
         border-radius: 1rem 1rem 1rem 1rem;
-        box-shadow: 16px #F2F2F2;
-
+        box-shadow: 16px #F2F2F2;   
     }
 
     .bannieres {
         width: 100%;
     } 
+
+    .alignement{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
     
+    .bannieres figcaption{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .lieux{
+        margin-top: 10px;
+    }
     .bannieres figure {
         background-color: white;
         border-radius: 1rem 1rem 1rem 1rem;
         box-shadow: 0 0 16px #0000002e;
+        position: relative;
     }
     
     .bannieres img { 
@@ -197,44 +249,49 @@
     .n {
         display: inline-block;
         position: absolute;
-        margin-left: -100px;
         color: #139273;
         background-color: #99E2D0;
         padding: 4.5px;
+        top: 0;
+        right: 1em;
     }
     .bannieres figcaption {
         padding-left: 20px;
         line-height: 25px;
     }
 
+    .bannieres a{
+        text-decoration: none;
+    }
+
     .bannieres figcaption strong {
         font-size: 20px;
         font-family: Roboto;
-        text-decoration: none;
         color: black;
     }
     .bannieres figcaption span {
         font-family: Roboto;
-        text-decoration: none;
         color: black;
     }
     
     .coeur{
-        color: black;
-        font-size: 35px;
-        display: initial;
-        padding-left: 101px;
+        color: #353535;
+    }
+
+    .fa-heart{
+        margin-right:32px;
+        font-size: 24px;
     }
 
     .basdepage{
         background-color: #353535;
-        margin-top: 48px;
+        margin-top: 48px!important;
     }
 
     .logo{
         color: #ffffff;
-        font-size: 23px;
-        margin-left: 40px;
+        font-size: 23px!important;
+        margin-left: 40px!important;
         font-family: Shrikhand;
         padding-top: 0.5px;
     }
@@ -275,4 +332,671 @@
     }
 
     }
+
+    /*version tablette*/
+
+    @media screen and (min-width:750px) and (max-width:1024px){
+
+        .logooh{
+            width: 187px!important;
+            display: block;
+            margin-left: 284px!important;
+            margin-right: auto;
+            padding-top: 20px;
+            padding-bottom: 20px; 
+            height: 40px!important; 
+        }
+        .recherche{
+            background-color: #eaeaea;
+            border-top: 0.5px solid #dbdbdb;
+            border-bottom: 0.5px solid #eaeaea;
+            box-shadow: inset 5px 12px 7px -10px #eaeaea;
+            margin-left: -8px;
+            margin-right: -9px;
+        }
+        
+        .p1{
+            text-align: center;
+            font-size: 22px!important;
+            margin-bottom: 21px;
+            color: #353535;
+        }
+    
+        .formulaires a{
+            margin-left: 17px;
+            font-family: roboto;
+            font-weight: bolder;
+        }
+    
+        .fa-map-marker-alt{
+            color: #353535;
+        }
+    
+        .unsection{
+            border-top: 0.5px solid #f6f6f6;
+            border-bottom: 0.5px solid #f6f6f6;
+            background-color: #f6f6f6;
+            margin-left: -8px;
+            margin-right: -9px;
+        }
+    
+        .unsection h1{
+            text-align: center;
+            font-size: 40px!important;
+            font-family: roboto;
+            font-weight: 100;
+         }
+    
+        .unsection h2{
+            text-align: center;
+            font-family: roboto;
+            font-size: 26px!important;
+            font-weight: 100;
+            padding-bottom: 10px;
+        }
+    
+        .explorer{
+            background: #f6f6f6;
+            padding-bottom: 53px;
+            margin-left: -8px;
+            margin-right: -9px;
+        }
+    
+        .explorer button{
+            border: 0;
+            color: white;
+            background: linear-gradient( 100deg, #FF79DA, #9356DC);
+            box-shadow: 5px 5px 10px 1px #d3d2d2;
+            padding: 15px;
+            border-radius: 2rem;
+            font-size: 23px!important;
+            cursor: pointer;
+            margin-left: 235px!important;
+        }
+        
+        .titre{
+            padding-left: 29px;
+            font-family: Shrikhand;   
+        }
+        .titre ul{
+            display: flex;
+            flex-direction: column;
+            padding-left: 0;
+        }
+    
+        .deuxsection ul{
+            padding: 0;
+            margin-left: 1em;
+            margin-right: 1em;
+            display: flex;
+            flex-direction: column;
+            height: 80%!important;
+        }
+    
+        .deuxsection h1{
+            margin-left: 10px;
+            font-family: roboto;
+            font-size: 34px!important;
+        }
+    
+        .choisir{
+            list-style-type: none;
+            background-color: #f6f6f6;
+            border: 0.5px solid #f6f6f6;
+            border-radius: 25px;
+            padding-left: 15px;
+            padding-bottom: 25px;
+            padding-top: 25px;
+            box-shadow: 5px 5px 10px 1px #e7e7e7;
+            margin-bottom: 20px;
+            width: 100%!important;
+            margin-left: 0!important;
+        }
+        
+        .number{
+            margin-left: -30px;
+            color: white;
+            background: #9356DC;
+            padding: 4px 8px 4px;
+            border-radius: 100px;
+            font-size: 24px!important;
+        }
+    
+        .fa-mobile-alt {
+            padding-left: 15px;
+            color: #7e7e7e;
+            font-size: 27px!important;
+    
+          }
+    
+        .choisir a{
+            text-decoration: none;
+            padding-left: 33px;
+            font-size: 27px!important;
+            color: black;
+        }
+    
+        .composer{
+            list-style-type: none;
+            background-color: whitesmoke;
+            border: 0.5px solid whitesmoke;
+            border-radius: 25px;
+            padding-left: 15px;
+            padding-bottom: 25px;
+            padding-top: 25px;
+            box-shadow: 5px 5px 10px 1px #d3d2d2;
+            margin-bottom: 20px;
+            width: 100%!important;
+            margin-left: 0!important;
+        }
+    
+        .fa-list-ul{
+            padding-left: 15px;
+            color: #7e7e7e;
+            font-size: 27px!important;
+        }
+    
+        .composer a{
+            text-decoration: none;
+            padding-left: 33px;
+            font-size: 27px!important;
+            color: black;
+        }
+    
+        .déguster{
+            list-style-type: none;
+            background-color: whitesmoke;
+            border: 0.5px solid whitesmoke;
+            border-radius: 25px;
+            padding-left: 15px;
+            padding-bottom: 25px;
+            padding-top: 25px;
+            box-shadow: 5px 5px 10px 1px #d3d2d2;
+            margin-bottom: 62px;
+            width: 100%!important;
+            margin-left: 0!important;
+        }
+    
+        .fa-store{
+            padding-left: 15px;
+            color: #7e7e7e;
+            font-size: 27px!important;
+        }
+    
+        .déguster a{
+            text-decoration: none;
+            padding-left: 33px;
+            font-size: 27px;
+            color: black;
+
+        }
+    
+        #carte{
+            background-color: #F2F2F2;
+            margin-left: -8px;
+            margin-right: -9px;
+        }
+    
+        .restaurantitre{
+            padding-left: 38px;
+            font-family: roboto;
+            padding-top: 20px;
+            font-size: 25px!important;
+        }
+        .figure{
+            border-radius: 1rem 1rem 1rem 1rem;
+            box-shadow: 16px #F2F2F2;   
+        }
+    
+        .bannieres {
+            width: 100%;
+        } 
+    
+        .alignement{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        
+        .bannieres figcaption{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+        .lieux{
+            margin-top: 10px;
+        }
+        .bannieres figure {
+            background-color: white;
+            border-radius: 1rem 1rem 1rem 1rem;
+            box-shadow: 0 0 16px #0000002e;
+            position: relative;
+        }
+        
+        .bannieres img { 
+            object-fit: cover;
+            width: 100%;
+            height: 235px;
+            border-radius: 1rem 1rem 0 0;
+    
+        }
+        .n {
+            display: inline-block;
+            position: absolute;
+            color: #139273;
+            background-color: #99E2D0;
+            padding: 4.5px;
+            top: 0;
+            right: 1em;
+        }
+        .bannieres figcaption {
+            padding-left: 20px;
+            line-height: 25px;
+        }
+    
+        .bannieres a{
+            text-decoration: none;
+        }
+    
+        .bannieres figcaption strong {
+            font-size: 20px;
+            font-family: Roboto;
+            color: black;
+        }
+        .bannieres figcaption span {
+            font-family: Roboto;
+            color: black;
+        }
+        
+        .coeur{
+            color: #353535;
+        }
+    
+        .fa-heart{
+            margin-right:32px;
+            font-size: 24px;
+        }
+    
+        .basdepage{
+            background-color: #353535;
+            margin-top: 48px;
+        }
+    
+        .logo{
+            color: #ffffff;
+            font-size: 23px;
+            margin-left: 40px;
+            font-family: Shrikhand;
+            padding-top: 0.5px;
+        }
+    
+        .liste-apropos li{
+            list-style-type: none; 
+            padding-bottom: 5px;
+        }
+    
+        .liste-apropos a{
+            color: #ffffff;
+        }
+    
+        .choixrestaurant a{
+            text-decoration: none;
+            margin-left: 17px;
+        }
+    
+        .fa-utensils{
+            color: #ffffff;
+        }
+    
+        .choixpartenaire a{
+            text-decoration: none;
+            margin-left: 10px;
+        }
+    
+        .fa-hands-helping{
+            color:#ffffff;
+        }
+    
+        .choixmention a{
+            text-decoration: none;
+        }
+    
+        .contact a{
+            text-decoration: none;
+        }
+    }
+
+
+/*version desktop*/
+
+.logooh{
+    width: 207px;
+    display: block;
+    margin-left: 536px;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    height: 40px; 
+}
+.recherche{
+    background-color: #eaeaea;
+    border-top: 0.5px solid #dbdbdb;
+    border-bottom: 0.5px solid #eaeaea;
+    box-shadow: inset 5px 12px 7px -10px #eaeaea;
+    margin-left: -8px;
+    margin-right: -9px;
+}
+
+.p1{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 21px;
+    color: #353535;
+}
+
+.formulaires a{
+    margin-left: 17px;
+    font-family: roboto;
+    font-weight: bolder;
+}
+
+.fa-map-marker-alt{
+    color: #353535;
+}
+
+.unsection{
+    border-top: 0.5px solid #f6f6f6;
+    border-bottom: 0.5px solid #f6f6f6;
+    background-color: #f6f6f6;
+    margin-left: -8px;
+    margin-right: -9px;
+}
+
+.unsection h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: roboto;
+    font-weight: 100;
+ }
+
+.unsection h2{
+    text-align: center;
+    font-family: roboto;
+    font-size: 26px;
+    font-weight: 100;
+    padding-bottom: 10px;
+}
+
+.explorer{
+    background: #f6f6f6;
+    padding-bottom: 53px;
+    margin-left: -8px;
+    margin-right: -9px;
+}
+
+.explorer button{
+    border: 0;
+    color: white;
+    background: linear-gradient( 100deg, #FF79DA, #9356DC);
+    box-shadow: 5px 5px 10px 1px #d3d2d2;
+    padding: 15px;
+    border-radius: 2rem;
+    font-size: 23px!;
+    cursor: pointer;
+    margin-left: 560px;
+}
+
+.titre{
+    padding-left: 29px;
+    font-family: Shrikhand;   
+}
+.titre ul{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.deuxsection ul{
+    padding: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: flex;
+}
+
+.deuxsection h1{
+    margin-left: 10px;
+    font-family: roboto;
+    font-size: 34px;
+}
+
+.choisir{
+    list-style-type: none;
+    background-color: #f6f6f6;
+    border: 0.5px solid #f6f6f6;
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    box-shadow: 5px 5px 10px 1px #e7e7e7;
+    margin-bottom: 20px;
+    width: 29%;
+    height: 30%;
+    margin-left: 35px;
+}
+
+.number{
+    margin-left: -30px;
+    color: white;
+    background: #9356DC;
+    padding: 4px 8px 4px;
+    border-radius: 100px;
+    font-size: 24px;
+}
+
+.fa-mobile-alt {
+    padding-left: 15px;
+    color: #7e7e7e;
+    font-size: 27px;
+
+  }
+
+.choisir a{
+    text-decoration: none;
+    padding-left: 33px;
+    font-size: 27px;
+    color: black;
+}
+
+.composer{
+    list-style-type: none;
+    background-color: whitesmoke;
+    border: 0.5px solid whitesmoke;
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    box-shadow: 5px 5px 10px 1px #d3d2d2;
+    margin-bottom: 20px;
+    width: 29%;
+    height: 30%;
+    margin-left: 24px;
+}
+
+.fa-list-ul{
+    padding-left: 15px;
+    color: #7e7e7e;
+    font-size: 27px;
+}
+
+.composer a{
+    text-decoration: none;
+    padding-left: 33px;
+    font-size: 27px;
+    color: black;
+}
+
+.déguster{
+    list-style-type: none;
+    background-color: whitesmoke;
+    border: 0.5px solid whitesmoke;
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    box-shadow: 5px 5px 10px 1px #d3d2d2;
+    margin-bottom: 62px;
+    width: 29%;
+    height: 30%;
+    margin-left: 24px;
+}
+
+.fa-store{
+    padding-left: 15px;
+    color: #7e7e7e;
+    font-size: 27px;
+}
+
+.déguster a{
+    text-decoration: none;
+    padding-left: 33px;
+    font-size: 27px;
+    color: black;
+
+}
+
+#carte{
+    background-color: #F2F2F2;
+    margin-left: -8px;
+    margin-right: -9px;
+}
+
+.restaurantitre{
+    padding-left: 38px;
+    font-family: roboto;
+    padding-top: 20px;
+    font-size: 25px;
+}
+.figure{
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 16px #F2F2F2;   
+}
+
+.bannieres {
+    width: 100%;
+} 
+
+.alignement{
+    display: flex;
+    
+}
+
+.bannieres figcaption{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.lieux{
+    margin-top: 10px;
+}
+.bannieres figure {
+    background-color: white;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 0 0 16px #0000002e;
+    position: relative;
+    width: 85%;
+}
+
+.bannieres img { 
+    object-fit: cover;
+    width: 100%;
+    height: 235px;
+    border-radius: 1rem 1rem 0 0;
+
+}
+.n {
+    display: inline-block;
+    position: absolute;
+    color: #139273;
+    background-color: #99E2D0;
+    padding: 4.5px;
+    top: 0;
+    right: 1em;
+}
+.bannieres figcaption {
+    padding-left: 20px;
+    line-height: 25px;
+}
+
+.bannieres a{
+    text-decoration: none;
+}
+
+.bannieres figcaption strong {
+    font-size: 20px;
+    font-family: Roboto;
+    color: black;
+}
+.bannieres figcaption span {
+    font-family: Roboto;
+    color: black;
+}
+
+.coeur{
+    color: #353535;
+}
+
+.fa-heart{
+    margin-right:32px;
+    font-size: 24px;
+}
+
+.basdepage{
+    background-color: #353535;
+    margin-top: 48px;
+}
+
+.logo{
+    color: #ffffff;
+    font-size: 40px;
+    margin-left: 40px;
+    font-family: Shrikhand;
+    padding-top: 0.5px;
+}
+
+.liste-apropos li{
+    list-style-type: none; 
+    padding-bottom: 5px;
+}
+
+.liste-apropos a{
+    color: #ffffff;
+}
+
+.choixrestaurant a{
+    text-decoration: none;
+    margin-left: 17px;
+}
+
+.fa-utensils{
+    color: #ffffff;
+}
+
+.choixpartenaire a{
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.fa-hands-helping{
+    color:#ffffff;
+}
+
+.choixmention a{
+    text-decoration: none;
+}
+
+.contact a{
+    text-decoration: none;
+}
+
+
 
