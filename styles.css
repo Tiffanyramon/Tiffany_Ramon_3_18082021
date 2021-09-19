@@ -338,12 +338,8 @@
     @media screen and (min-width:750px) and (max-width:1024px){
 
         .logooh{
-            width: 187px!important;
-            display: block;
-            margin-left: 284px!important;
-            margin-right: auto;
-            padding-top: 20px;
-            padding-bottom: 20px; 
+            width: 215px!important;
+            margin-left: auto!important;
             height: 40px!important; 
         }
         .recherche{
@@ -397,10 +393,11 @@
     
         .explorer{
             background: #f6f6f6;
-            padding-bottom: 53px;
-            margin-left: -8px;
-            margin-right: -9px;
+            display: flex;
+            justify-content: center;
         }
+           
+
     
         .explorer button{
             border: 0;
@@ -425,10 +422,6 @@
         }
     
         .deuxsection ul{
-            padding: 0;
-            margin-left: 1em;
-            margin-right: 1em;
-            display: flex;
             flex-direction: column;
             height: 80%!important;
         }
@@ -758,8 +751,8 @@
 
 .deuxsection ul{
     padding: 0;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
     display: flex;
 }
 
