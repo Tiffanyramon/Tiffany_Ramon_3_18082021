@@ -277,10 +277,12 @@
     .coeur{
         color: #353535;
     }
+    .heartwhite{
+       position: absolute;
+    }
+    .heartcolor{
+        color: transparent;
 
-    .fa-heart{
-        margin-right:32px;
-        font-size: 24px;
     }
 
     .basdepage{
@@ -600,14 +602,17 @@
             font-family: Roboto;
             color: black;
         }
-        
-        .coeur{
-            color: #353535;
+
+        .heartwhite{
+            position: absolute;
+        }
+        .heartcolor{
+            color: transparent;
         }
     
         .fa-heart{
             margin-right:32px;
-            font-size: 24px;
+            font-size: 33px;
         }
     
         .basdepage{
@@ -936,6 +941,14 @@
 
 .coeur{
     color: #353535;
+    
+}
+.heartwhite{
+    position: absolute;
+}
+
+.heartcolor{
+    color: transparent;
 }
 
 .fa-heart{
@@ -991,5 +1004,23 @@
     text-decoration: none;
 }
 
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #9356DC; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+/*.loader .spinner{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    place-items: center;
+    margin: auto;
+    left: 0px;
+}*/
+    
 
 

@@ -74,10 +74,19 @@
     .prix{
         font-family: roboto;
         display: flex;
-        flex-direction:column;
+        flex-direction:row;
         justify-content: flex-end;
+        align-items: flex-end;
+        font-weight: 700;
         font-size: 18px!important;
-        margin-bottom: 10px;
+    }
+    .glissement{
+        display: flex;
+        align-items: center;
+        font-size: 23px;
+        color: white;
+        background-color: #99E2D0;
+        margin-right: -1em;
     }
 
     .restaurant p {
@@ -85,9 +94,18 @@
         font-family: 'Shrikhand';
         margin-left: 27px!important;
     }
+    .restaurant{
+        display: flex;
+    }
 
-    .fa-heart{
-        margin-left: 123px!important;
+    .heartwhite{
+        margin-left: 0px!important;
+        color: #353535;
+        position: absolute;
+    }
+
+    .heartcolor{
+        color: transparent;
     }
 
     .choix{
@@ -245,10 +263,19 @@
     .prix{
         font-family: roboto;
         display: flex;
-        flex-direction:column;
+        flex-direction:row;
         justify-content: flex-end;
+        align-items: flex-end;
+        font-weight: 700;
         font-size: 29px!important;
-        margin-bottom: 10px;
+    }
+    .glissement{
+        display: flex;
+        align-items: center;
+        font-size: 23px;
+        color: white;
+        background-color: #99E2D0;
+        margin-right: -1em;
     }
 
     .restaurant p {
@@ -257,9 +284,19 @@
         margin-left: 37px;
     }
 
-    .fa-heart{
-        margin-left: 610px!important;
-        margin-top: -54px!important;
+    .heartwhite{
+        margin-bottom: -31px;
+        font-size: 33px;
+    }
+
+    .heartcolor{
+        margin-bottom: -31px;
+        font-size: 33px;
+        color: transparent;
+
+    }
+    H3{
+        font-size: 30px;
     }
 
     .choix{
@@ -415,16 +452,22 @@
 }
 
 .prix{
-     font-family: roboto;
-     display: flex;
-     flex-direction:column;
-     justify-content: flex-end;
-     font-size: 29px!important;
-     margin-bottom: 10px;
-     font-weight: 700!important;
-     margin-right: 20px!important;
+    font-family: roboto;
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-weight: 700;
+    font-size: 29px;
 }
-
+.glissement{
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    color: white;
+    background-color: #99E2D0;
+    margin-right: -1em;
+}
 .restaurant p {
     font-size: 47px;
     font-family: 'Shrikhand';
