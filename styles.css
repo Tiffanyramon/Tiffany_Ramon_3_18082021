@@ -795,6 +795,11 @@
     font-size: 23px!;
     cursor: pointer;
     margin-left: 560px;
+    transition: background-color 1s;
+}
+.button:hover{
+    background-color: red;
+
 }
 
 .titre{
@@ -1002,6 +1007,13 @@
 
 .heartcolor{
     color: transparent;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: 6s;
+    background: linear-gradient( 100deg, #FF79DA, #9356DC);
     
 }
 
