@@ -66,8 +66,9 @@
     .explorer{
         background: #f6f6f6;
         padding-bottom: 53px;
-        margin-left: -8px;
-        margin-right: -9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .explorer button{
@@ -80,6 +81,17 @@
         font-size: 18px!important;
         cursor: pointer;
         margin-left: 71px!important;
+    }
+    .explorer button:hover{
+        animation: button 0.6s both;
+    }
+    @keyframes button{
+        0% {
+            text-shadow: 0 0 0 rgba(170,170,170, 0);
+        }
+        100%{
+            text-shadow: 6px 6px 18px rgba(255, 255, 255, 0.800);
+        }
     }
     
     .titre{
@@ -211,7 +223,7 @@
     }
     .figure{
         border-radius: 1rem 1rem 1rem 1rem;
-        box-shadow: 16px #F2F2F2;   
+        box-shadow: 16px 5px 5px #F2F2F2;   
     }
 
     .bannieres {
@@ -540,7 +552,6 @@
         }
         .figure{
             border-radius: 1rem 1rem 1rem 1rem;
-            box-shadow: 16px #F2F2F2;   
         }
     
         .bannieres {
@@ -792,14 +803,10 @@
     box-shadow: 5px 5px 10px 1px #d3d2d2;
     padding: 15px;
     border-radius: 2rem;
-    font-size: 23px!;
+    font-size: 23px;
     cursor: pointer;
     margin-left: 560px;
     transition: background-color 1s;
-}
-.button:hover{
-    background-color: red;
-
 }
 
 .titre{
@@ -934,7 +941,7 @@
 }
 .figure{
     border-radius: 1rem 1rem 1rem 1rem;
-    box-shadow: 16px #F2F2F2;   
+    box-shadow: 16px 5px 5px #F2F2F2;   
 }
 
 .bannieres {
@@ -1003,6 +1010,16 @@
 }
 .heartwhite{
     position: absolute;
+    text-decoration: none;
+}
+@keyframes heatwhite {
+    0%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+    
 }
 
 .heartcolor{
@@ -1012,18 +1029,22 @@
     bottom: 0;
     left: 0;
     z-index: -1;
-    transition: 6s;
-    background: linear-gradient( 100deg, #FF79DA, #9356DC);
-    
+    transition-duration: 3s;
+    transition-property: opacity;
+    text-decoration: none;
 }
 
-@keyframes hearcolor{
-    0% {
-        opacity: 1%;
-    }
-    100%{
-        opacity: 100%;
-    }
+.hearcolor:before{
+   background: linear-gradient( 100deg, #FF79DA, #9356DC);
+}
+
+@keyframes heartcolor{
+0%{
+    opacity: 0%;
+}
+100%{
+    opacity:  100%;
+}
 
 }
 
