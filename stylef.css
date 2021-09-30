@@ -465,7 +465,7 @@
     border-radius: 20px 20px 0px 0px;
     margin-top: -3rem;
     position: relative;
-    margin-right: -9px;
+    margin-right: -14px;
     margin-left: -8px;
 }
 
@@ -475,6 +475,16 @@
     margin: 2rem 1rem 0 1rem;
     padding-bottom: 0.4rem;
     font-size: 30px;
+}
+.restaurant{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 27px;
+}
+.restaurant h3{
+    margin-left: 20px;
 }
 
 .bannieres{
@@ -486,7 +496,6 @@
     justify-content: space-between;
     flex-direction: row;
 }
-
 .description{
     margin: 15px;
     padding-top: 13px;
@@ -494,11 +503,11 @@
 
 .menu strong{
     font-family: Roboto;
-    font-size: 27px;
+    font-size: 19px;
 }
 
 .menu span{
-    font-size: 24px;
+    font-size: 19px;
 }
 
 .prix{
@@ -508,15 +517,17 @@
     justify-content: flex-end;
     align-items: flex-end;
     font-weight: 700;
-    font-size: 29px;
+    font-size: 23px;
 }
 .glissement{
     display: flex;
-    align-items: center;
-    font-size: 23px;
-    color: white;
+   
+}
+.fa-chek-circle{
+    color:white;
     background-color: #99E2D0;
-    margin-right: -1em;
+    font-size:23px;
+    margin-bottom: 28px;
 }
 .restaurant p {
     font-size: 47px;
@@ -567,11 +578,11 @@
 
 .commander{
     background-color: #f6f6f6;
-    padding-bottom: 47px;
-    padding-top: 29px;
     display: flex;
     align-content: center;
     margin-left: auto;
+    margin-right: -10px;
+    margin-bottom: 20px;
 }
 .commander button{
     border: 0;
@@ -580,9 +591,25 @@
     box-shadow: 5px 5px 10px 1px #d3d2d2;
     padding: 15px;
     border-radius: 2rem;
-    font-size: 36px;
+    font-size: 23px;
     cursor: pointer;
-    margin-left: 500px;
+    margin: 0 auto;
+    display: block;
+    transition:background-color 1s;
+}
+
+.commander button:hover{
+    animation: button 0.6s both;
+}
+@keyframes button{
+    0% {
+        box-shadow: 0 0 0 rgba(228,228,228,0.8);
+        background: linear-gradient (100deg,rgba(214,108,219,1), rgba(167,92,219,1));
+    }
+    100%{
+        box-shadow: 0 0 0 rgba(190, 190, 190, 0);
+        background: linear-gradient( 100deg, rgba(214,108,219,1), rgba(167,92,219,1));
+    }
 }
 .basdepage{
     background-color: #353535;
