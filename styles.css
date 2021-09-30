@@ -81,18 +81,10 @@
         font-size: 18px!important;
         cursor: pointer;
         margin-left: 71px!important;
+        display: block;
+        margin: 0 auto;
     }
-    .explorer button:hover{
-        animation: button 0.6s both;
-    }
-    @keyframes button{
-        0% {
-            text-shadow: 0 0 0 rgba(170,170,170, 0);
-        }
-        100%{
-            text-shadow: 6px 6px 18px rgba(255, 255, 255, 0.800);
-        }
-    }
+    
     
     .titre{
         padding-left: 29px!important;
@@ -698,11 +690,9 @@
     top: 0;
     bottom: 0;
     right: 0;
-    display: block;
+    display: flex;
     animation: loader 3s forwards;
-
-
-    
+    visibility: hidden;
   }
   .loader .spin{
     border: 16px solid #f3f3f3; 
@@ -805,8 +795,22 @@
     border-radius: 2rem;
     font-size: 23px;
     cursor: pointer;
-    margin-left: 560px;
+    display: block;
+    margin: 0 auto;
     transition: background-color 1s;
+}
+.explorer button:hover{
+    animation: button 0.6s both;
+}
+@keyframes button{
+    0% {
+        box-shadow: 0 0 0 rgba(228,228,228,0.8);
+        background: linear-gradient (100deg,rgba(214,108,219,1), rgba(167,92,219,1));
+    }
+    100%{
+        box-shadow: 0 0 0 rgba(190, 190, 190, 0);
+        background: linear-gradient( 100deg, rgba(214,108,219,1), rgba(167,92,219,1));
+    }
 }
 
 .titre{
@@ -846,6 +850,19 @@
     height: 30%;
     margin-left: 35px;
 }
+.choisir:hover{
+    animation: choisir 0.6s both;
+}
+@keyframes choisir {
+    0%{
+        background: #F6F6F6;
+
+    }
+    100%{
+        background: #f5edff ;
+    }
+    
+}
 
 .number{
     margin-left: -30px;
@@ -861,7 +878,22 @@
     color: #7e7e7e;
     font-size: 19px;
 
-  }
+}
+
+.fa-mobile-alt:hover{
+    animation: choisir 0.6s both;
+}
+@keyframes fa-mobile-alt {
+    0%{
+        background: #F6F6F6;
+
+    }
+    100%{
+        background: #9356dc ;
+    }
+    
+}
+
 
 .choisir a{
     text-decoration: none;
@@ -884,13 +916,40 @@
     height: 30%;
     margin-left: 24px;
 }
+.composer:hover{
+    animation: choisir 0.6s both;
+}
+@keyframes composer {
+    0%{
+        background: #F6F6F6;
+
+    }
+    100%{
+        background: #f5edff ;
+    }
+    
+}
+
 
 .fa-list-ul{
     padding-left: 15px;
     color: #7e7e7e;
     font-size: 19px;
 }
+.fa-list-ul:hover{
+    animation: choisir 0.6s both;
+}
+@keyframes fa-list-ul {
+    0%{
+        background: #F6F6F6;
 
+    }
+    100%{
+        background: #9356dc ;
+    }
+
+}
+    
 .composer a{
     text-decoration: none;
     padding-left: 33px;
@@ -913,10 +972,37 @@
     margin-left: 24px;
 }
 
+.déguster:hover{
+    animation: choisir 0.6s both;
+}
+@keyframes déguster {
+    0%{
+        background: #F6F6F6;
+
+    }
+    100%{
+        background: #f5edff ;
+    }
+    
+}
+
 .fa-store{
     padding-left: 15px;
     color: #7e7e7e;
     font-size: 19px;
+}
+.fa-store:hover{
+    animation: choisir 0.6s both;
+}
+@keyframes fa-store {
+    0%{
+        background: #F6F6F6;
+
+    }
+    100%{
+        background: #9356dc ;
+    }
+
 }
 
 .déguster a{
@@ -1012,14 +1098,8 @@
     position: absolute;
     text-decoration: none;
 }
-@keyframes heatwhite {
-    0%{
-        opacity: 100%;
-    }
-    100%{
-        opacity: 0%;
-    }
-    
+.heartwhite:hover{
+    opacity:0;
 }
 
 .heartcolor{
@@ -1034,19 +1114,11 @@
     text-decoration: none;
 }
 
-.hearcolor:before{
+.hearcolor:hover{
+   opacity: 1; 
    background: linear-gradient( 100deg, #FF79DA, #9356DC);
 }
 
-@keyframes heartcolor{
-0%{
-    opacity: 0%;
-}
-100%{
-    opacity:  100%;
-}
-
-}
 
 .fa-heart{
     margin-right:32px;
