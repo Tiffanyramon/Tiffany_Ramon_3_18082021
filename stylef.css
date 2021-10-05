@@ -80,14 +80,7 @@
         font-weight: 700;
         font-size: 18px!important;
     }
-    .glissement{
-        display: flex;
-        align-items: center;
-        font-size: 23px;
-        color: white;
-        background-color: #99E2D0;
-        margin-right: -1em;
-    }
+   
 
     .restaurant p {
         font-size: 25px!important;
@@ -295,14 +288,7 @@
         font-weight: 700;
         font-size: 29px!important;
     }
-    .glissement{
-        display: flex;
-        align-items: center;
-        font-size: 23px;
-        color: white;
-        background-color: #99E2D0;
-        margin-right: -1em;
-    }
+  
 
     .restaurant p {
         font-size: 40px;
@@ -495,10 +481,14 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    overflow: hidden;
 }
 .description{
     margin: 15px;
     padding-top: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .menu strong{
@@ -521,14 +511,22 @@
 }
 .glissement{
     display: flex;
-   
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
 }
-.fa-chek-circle{
+.fa-check-circle{
     color:white;
-    background-color: #99E2D0;
+    background: #99E2D0;
     font-size:23px;
-    margin-bottom: 28px;
+    animation: 2s linear;
+    
 }
+@keyframes fa-check-circle{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
 .restaurant p {
     font-size: 47px;
     font-family: 'Shrikhand';
@@ -593,7 +591,6 @@
     border-radius: 2rem;
     font-size: 23px;
     cursor: pointer;
-    margin: 0 auto;
     display: block;
     transition:background-color 1s;
 }

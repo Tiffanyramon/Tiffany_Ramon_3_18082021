@@ -692,7 +692,7 @@
     right: 0;
     display: flex;
     animation: loader 3s forwards;
-    visibility: hidden;
+    opacity: 0;
   }
   .loader .spin{
     border: 16px solid #f3f3f3; 
@@ -726,6 +726,7 @@
     100%{
         opacity: 0;
         display: none;
+        visibility: hidden;
     }
   }
      
