@@ -8,7 +8,6 @@
     .logooh{
         width: 180px!important;
         display: block;
-        margin-left: 90px!important;
         margin-right: auto;
         padding-top: 20px;
         padding-bottom: 20px; 
@@ -80,7 +79,6 @@
         border-radius: 2rem;
         font-size: 18px!important;
         cursor: pointer;
-        margin-left: 71px!important;
         display: block;
         margin: 0 auto;
     }
@@ -402,8 +400,6 @@
             display: flex;
             justify-content: center;
         }
-           
-
     
         .explorer button{
             border: 0;
@@ -414,7 +410,6 @@
             border-radius: 2rem;
             font-size: 23px!important;
             cursor: pointer;
-            margin-left: 235px!important;
         }
         
         .titre{
@@ -464,14 +459,12 @@
         .fa-mobile-alt {
             padding-left: 15px;
             color: #7e7e7e;
-            font-size: 27px!important;
     
           }
     
         .choisir a{
             text-decoration: none;
             padding-left: 33px;
-            font-size: 27px!important;
             color: black;
         }
     
@@ -492,13 +485,11 @@
         .fa-list-ul{
             padding-left: 15px;
             color: #7e7e7e;
-            font-size: 27px!important;
         }
     
         .composer a{
             text-decoration: none;
             padding-left: 33px;
-            font-size: 27px!important;
             color: black;
         }
     
@@ -519,13 +510,11 @@
         .fa-store{
             padding-left: 15px;
             color: #7e7e7e;
-            font-size: 27px!important;
         }
     
         .déguster a{
             text-decoration: none;
             padding-left: 33px;
-            font-size: 27px;
             color: black;
 
         }
@@ -680,9 +669,9 @@
 }
 
 .loader {
-    width: 100%;
-    height: 100%;
-    background-color: white;
+    width: 100vW;
+    height: 100vH;
+    background: linear-gradient( 100deg, #FF79DA, #9356DC);
     position: fixed;
     z-index: 2;
     margin: auto;
@@ -691,19 +680,18 @@
     bottom: 0;
     right: 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
     animation: loader 3s forwards;
     opacity: 0;
   }
   .loader .spin{
-    border: 16px solid #f3f3f3; 
-    border-top: 16px solid #9356DC; 
-    border-right: 16px solid #99E2D0;
-    border-left: 16px solid #FF79DA;
+    border: 16px solid #FF79DA; 
+    border-top: 16px solid #99e2D0; 
+    border-right: 16px solid #FF79DA;
+    border-left: 16px solid #99e2D0;
     border-radius: 50%;
-    background: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    background: #9356DC;
     height: 150px;
     width: 150px;
     z-index: 2;
@@ -810,7 +798,7 @@
     }
     100%{
         box-shadow: 0 0 0 rgba(190, 190, 190, 0);
-        background: linear-gradient( 100deg, rgba(214,108,219,1), rgba(167,92,219,1));
+        background: linear-gradient( 100deg, rgba(236, 122, 241, 0.877), rgba(178, 99, 235, 0.979));
     }
 }
 
@@ -878,19 +866,19 @@
     padding-left: 15px;
     color: #7e7e7e;
     font-size: 19px;
-
 }
 
-.fa-mobile-alt:hover{
-    animation: choisir 0.6s both;
+.choisir:hover .fa-mobile-alt{
+    animation: fa-mobile-alt 0.4s both;
+
 }
 @keyframes fa-mobile-alt {
     0%{
-        background: #F6F6F6;
+        color: #F6F6F6;
 
     }
     100%{
-        background: #9356dc ;
+        color: #9356dc ;
     }
     
 }
@@ -937,16 +925,16 @@
     color: #7e7e7e;
     font-size: 19px;
 }
-.fa-list-ul:hover{
-    animation: choisir 0.6s both;
+.composer:hover .fa-list-ul{
+    animation: fa-list-ul 0.4s both;
 }
 @keyframes fa-list-ul {
     0%{
-        background: #F6F6F6;
+        color: #F6F6F6;
 
     }
     100%{
-        background: #9356dc ;
+        color: #9356dc ;
     }
 
 }
@@ -992,16 +980,16 @@
     color: #7e7e7e;
     font-size: 19px;
 }
-.fa-store:hover{
-    animation: choisir 0.6s both;
+.déguster:hover .fa-store{
+    animation: fa-store 0.4s both;
 }
 @keyframes fa-store {
     0%{
-        background: #F6F6F6;
+        color: #F6F6F6;
 
     }
     100%{
-        background: #9356dc ;
+        color: #9356dc ;
     }
 
 }
@@ -1099,26 +1087,27 @@
     position: absolute;
     text-decoration: none;
 }
-.heartwhite:hover{
-    opacity:0;
-}
-
-.heartcolor{
-    color: transparent;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    transition-duration: 3s;
-    transition-property: opacity;
-    text-decoration: none;
-}
-
-.hearcolor:hover{
-   opacity: 1; 
-   background: linear-gradient( 100deg, #FF79DA, #9356DC);
-}
+    
+.coeur:hover .heartwhite{
+        opacity:0;
+    }
+    
+    .heartcolor{
+        color: #FF79DA;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        transition-duration: 3s;
+        transition-property: opacity;
+        text-decoration: none;
+        opacity: 0;
+    }
+    
+    .coeur:hover .heartcolor{
+       opacity: 1; 
+    }
 
 
 .fa-heart{

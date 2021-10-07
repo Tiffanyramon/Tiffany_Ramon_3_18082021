@@ -90,43 +90,7 @@
     .restaurant{
         display: flex;
     }
-
-    .coeur{
-        color: #353535;
-        
-    }
-    .heartwhite{
-        position: absolute;
-        text-decoration: none;
-    }
-    .heartwhite:hover{
-        opacity:0;
-    }
-    
-    .heartcolor{
-        color: transparent;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-        transition-duration: 3s;
-        transition-property: opacity;
-        text-decoration: none;
-    }
-    
-    .hearcolor:hover{
-       opacity: 1; 
-       background: linear-gradient( 100deg, #FF79DA, #9356DC);
-    }
-    
-    
-    .fa-heart{
-        margin-right:32px;
-        font-size: 24px;
-    }
        
-
     .choix{
         display: flex;
         flex-direction:column;
@@ -150,7 +114,6 @@
         border-radius: 2rem!important;
         font-size: 18px!important;
         cursor: pointer!important;
-        margin-left: 1px!important;
     }
     .basdepage{
         background-color: #353535;
@@ -296,41 +259,6 @@
         margin-left: 37px;
     }
 
-    .coeur{
-        color: #353535;
-        
-    }
-    .heartwhite{
-        position: absolute;
-        text-decoration: none;
-    }
-    .heartwhite:hover{
-        opacity:0;
-    }
-    
-    .heartcolor{
-        color: transparent;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-        transition-duration: 3s;
-        transition-property: opacity;
-        text-decoration: none;
-    }
-    
-    .hearcolor:hover{
-       opacity: 1; 
-       background: linear-gradient( 100deg, #FF79DA, #9356DC);
-    }
-    
-    
-    .fa-heart{
-        margin-right:32px;
-        font-size: 24px;
-    }
-
     H3{
         font-size: 30px;
     }
@@ -357,7 +285,6 @@
         border-radius: 2rem;
         font-size: 36px;
         cursor: pointer;
-        margin-left: 284px!important;
     }
     .basdepage{
         background-color: #353535;
@@ -510,22 +437,35 @@
     font-size: 23px;
 }
 .glissement{
-    display: flex;
+   display: flex;
    align-items: center;
-   justify-content: center;
    overflow: hidden;
+   background: #99E2D0;
+   height: 100%;
+   width: 0px;
+   visibility: hidden;
+   
+}
+.glissement:hover{
+    animation-duration: 5s;
+   animation-direction: alternate-reverse;
+
+}
+@keyframes glissment{
+    0%{
+        visibility: 0px;
+    }
+    100%{
+        visibility: 50px;
+    }
 }
 .fa-check-circle{
     color:white;
-    background: #99E2D0;
     font-size:23px;
-    animation: 2s linear;
+    transform: rotate(180deg);
     
 }
-@keyframes fa-check-circle{
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+
 
 .restaurant p {
     font-size: 47px;
@@ -541,12 +481,12 @@
         position: absolute;
         text-decoration: none;
     }
-    .heartwhite:hover{
+    .coeur:hover .heartwhite{
         opacity:0;
     }
     
     .heartcolor{
-        color: transparent;
+        color: #FF79DA;
         right: 0;
         top: 0;
         bottom: 0;
@@ -555,11 +495,11 @@
         transition-duration: 3s;
         transition-property: opacity;
         text-decoration: none;
+        opacity: 0;
     }
     
-    .hearcolor:hover{
+    .coeur:hover .heartcolor{
        opacity: 1; 
-       background: linear-gradient( 100deg, #FF79DA, #9356DC);
     }
     
     
@@ -580,34 +520,34 @@
     align-content: center;
     margin-left: auto;
     margin-right: -10px;
-    margin-bottom: 20px;
 }
 .commander button{
-    border: 0;
-    color: white;
-    background: linear-gradient( 100deg, #FF79DA, #9356DC);
-    box-shadow: 5px 5px 10px 1px #d3d2d2;
-    padding: 15px;
-    border-radius: 2rem;
-    font-size: 23px;
-    cursor: pointer;
-    display: block;
-    transition:background-color 1s;
-}
-
-.commander button:hover{
-    animation: button 0.6s both;
-}
-@keyframes button{
-    0% {
-        box-shadow: 0 0 0 rgba(228,228,228,0.8);
-        background: linear-gradient (100deg,rgba(214,108,219,1), rgba(167,92,219,1));
+        border: 0;
+        color: white;
+        background: linear-gradient( 100deg, #FF79DA, #9356DC);
+        box-shadow: 5px 5px 10px 1px #d3d2d2;
+        padding: 15px;
+        border-radius: 2rem;
+        font-size: 23px;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        transition: background-color 1s;
+        margin-bottom: 20px;
     }
-    100%{
-        box-shadow: 0 0 0 rgba(190, 190, 190, 0);
-        background: linear-gradient( 100deg, rgba(214,108,219,1), rgba(167,92,219,1));
+    .commander button:hover{
+        animation: button 0.6s both;
     }
-}
+    @keyframes button{
+        0% {
+            box-shadow: 0 0 0 rgba(228,228,228,0.8);
+            background: linear-gradient (100deg,rgba(214,108,219,1), rgba(167,92,219,1));
+        }
+        100%{
+            box-shadow: 0 0 0 rgba(190, 190, 190, 0);
+            background: linear-gradient( 100deg, rgba(236, 122, 241, 0.877), rgba(178, 99, 235, 0.979));
+        }
+    }
 .basdepage{
     background-color: #353535;
     margin-top: 2px;
