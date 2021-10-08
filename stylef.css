@@ -442,21 +442,25 @@
    overflow: hidden;
    background: #99E2D0;
    height: 100%;
-   width: 0px;
+   width: 0;
    visibility: hidden;
    
 }
-.glissement:hover{
+.prix:hover .glissement{
     animation-duration: 5s;
-   animation-direction: alternate-reverse;
+    animation-name: glissement;
+    animation-direction: alternate-reverse;
 
 }
 @keyframes glissment{
     0%{
-        visibility: 0px;
+        width: 0;
+        visibility: hidden;
     }
     100%{
-        visibility: 50px;
+
+        width: 50px;
+        visibility: visible;
     }
 }
 .fa-check-circle{
