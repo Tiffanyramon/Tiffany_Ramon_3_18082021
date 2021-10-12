@@ -443,7 +443,6 @@
    background: #99E2D0;
    height: 100%;
    width: 0;
-   visibility: hidden;
    
 }
 .prix:hover .glissement{
@@ -452,7 +451,7 @@
     animation-direction: alternate-reverse;
 
 }
-@keyframes glissment{
+@keyframes glissement{
     0%{
         width: 0;
         visibility: hidden;
@@ -467,7 +466,11 @@
     color:white;
     font-size:23px;
     transform: rotate(180deg);
-    
+    -webkit-transition: -webkit-transform 1s;
+}
+
+.prix:hover .fa-check-circle{ 
+    -webkit-transition: rotate(180g);
 }
 
 

@@ -1093,7 +1093,8 @@
     }
     
     .heartcolor{
-        color: #FF79DA;
+        background-image: linear-gradient(#FF79DA,#9356DC);
+        background-clip: padding-box;
         right: 0;
         top: 0;
         bottom: 0;
