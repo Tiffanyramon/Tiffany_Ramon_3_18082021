@@ -400,7 +400,7 @@
     margin-left: 20px;
 }
 
-.bannieres{
+.bannieres1{
     background-color: white;
     border-radius: 0.8rem;
     margin: 1rem;
@@ -409,6 +409,156 @@
     justify-content: space-between;
     flex-direction: row;
     overflow: hidden;
+    animation: apparition 0,5s forwards;
+    animation-delay: 0;
+}
+.bannieres1 {
+    animation-delay: 0,4s;
+}
+.bannieres2{
+    background-color: white;
+    border-radius: 0.8rem;
+    margin: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    overflow: hidden;
+    animation: apparition 0,5s forwards;
+    animation-delay: 0;
+}
+.bannieres2{
+    animation-delay: 0,8s;
+}
+.bannieres3{
+    background-color: white;
+    border-radius: 0.8rem;
+    margin: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    overflow: hidden;
+    animation: apparition 0,5s forwards;
+    animation-delay: 0;
+}
+.bannieres3{
+    animation-delay: 0,12s;
+}
+.bannierestrois{
+    background-color: white;
+    border-radius: 0.8rem;
+    margin: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    overflow: hidden;
+    animation: apparition 0,5s forwards;
+    animation-delay: 0;
+}
+.bannierestrois{
+    animation-delay: 0,14s;
+}
+.bannieres4{
+    background-color: white;
+    border-radius: 0.8rem;
+    margin: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    overflow: hidden;
+    animation: apparition 0,5s forwards;
+    animation-delay: 0;
+}
+.bannieres4{
+    animation-delay: 0,16s;
+}
+.bannieres5{
+    background-color: white;
+    border-radius: 0.8rem;
+    margin: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    overflow: hidden;
+    animation: apparition 0,5s forwards;
+    animation-delay: 0;
+}
+.bannieres5{
+    animation-delay: 0,20s;
+}
+.bannieres6{
+    background-color: white;
+    border-radius: 0.8rem;
+    margin: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    overflow: hidden;
+    animation: apparition 0,5s forwards;
+    animation-delay: 0;
+}
+.bannieres6{
+    animation-delay: 0,24s;
+}
+.bannieres7{
+    background-color: white;
+    border-radius: 0.8rem;
+    margin: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    overflow: hidden;
+    animation: apparition 0,5s forwards;
+    animation-delay: 0;
+}
+.bannieres7{
+    animation-delay: 0,28s;
+}
+.bannieres8{
+    background-color: white;
+    border-radius: 0.8rem;
+    margin: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    overflow: hidden;
+    animation: apparition 0,5s forwards;
+    animation-delay: 0;
+}
+.bannieres8{
+    animation-delay: 0,32s;
+}
+.bannieres9{
+    background-color: white;
+    border-radius: 0.8rem;
+    margin: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    overflow: hidden;
+    animation: apparition 0,5s forwards;
+    animation-delay: 0;
+}
+.bannieres9{
+    animation-delay: 0,36s;
+}
+
+@keyframes apparition  {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
 }
 .description{
     margin: 15px;
@@ -445,10 +595,8 @@
    width: 0;
    
 }
-.prix:hover .glissement{
-    animation-duration: 5s;
-    animation-name: glissement;
-    animation-direction: alternate-reverse;
+.bannieres:hover .glissement{
+    animation: glissement 0,5s forwards;
 
 }
 @keyframes glissement{
@@ -465,15 +613,20 @@
 .fa-check-circle{
     color:white;
     font-size:23px;
-    transform: rotate(180deg);
-    -webkit-transition: -webkit-transform 1s;
 }
 
-.prix:hover .fa-check-circle{ 
-    -webkit-transition: rotate(180g);
+.bannieres:hover .fa-check-circle{
+    animation: rotateCirle 0,5s forwards;
 }
-
-
+@keyframes rotateCircle {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
 .restaurant p {
     font-size: 47px;
     font-family: 'Shrikhand';
@@ -493,7 +646,8 @@
     }
     
     .heartcolor{
-        color: #FF79DA;
+        background-image: linear-gradient(#FF79DA,#9356DC);
+        background-clip: padding-box;
         right: 0;
         top: 0;
         bottom: 0;
@@ -503,6 +657,8 @@
         transition-property: opacity;
         text-decoration: none;
         opacity: 0;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     
     .coeur:hover .heartcolor{
@@ -528,33 +684,40 @@
     margin-left: auto;
     margin-right: -10px;
 }
-.commander button{
-        border: 0;
-        color: white;
-        background: linear-gradient( 100deg, #FF79DA, #9356DC);
-        box-shadow: 5px 5px 10px 1px #d3d2d2;
-        padding: 15px;
-        border-radius: 2rem;
-        font-size: 23px;
-        cursor: pointer;
-        display: block;
-        margin: 0 auto;
-        transition: background-color 1s;
-        margin-bottom: 20px;
+.commander button {
+    border: 0;
+    color: white;
+    background: linear-gradient(100deg, #ff79da, #9356dc);
+    box-shadow: 5px 5px 10px 1px #d3d2d2;
+    padding: 15px;
+    border-radius: 2rem;
+    font-size: 23px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto-ok
+    transition: background 1s;
+  }
+  .commander button:hover {
+    animation: button 0.6s both;
+  }
+  @keyframes button {
+    0% {
+      box-shadow: 0 0 0 rgba(228, 228, 228, 0.8);
+      background: linear-gradient(
+        100deg,
+        rgba(214, 108, 219, 1),
+        rgba(167, 92, 219, 1)
+      );
     }
-    .commander button:hover{
-        animation: button 0.6s both;
+    100% {
+      box-shadow: 0 0 0 rgba(190, 190, 190, 0);
+      background: linear-gradient(
+        100deg,
+        rgba(236, 122, 241, 0.877),
+        rgba(178, 99, 235, 0.979)
+      );
     }
-    @keyframes button{
-        0% {
-            box-shadow: 0 0 0 rgba(228,228,228,0.8);
-            background: linear-gradient (100deg,rgba(214,108,219,1), rgba(167,92,219,1));
-        }
-        100%{
-            box-shadow: 0 0 0 rgba(190, 190, 190, 0);
-            background: linear-gradient( 100deg, rgba(236, 122, 241, 0.877), rgba(178, 99, 235, 0.979));
-        }
-    }
+  }
 .basdepage{
     background-color: #353535;
     margin-top: 2px;

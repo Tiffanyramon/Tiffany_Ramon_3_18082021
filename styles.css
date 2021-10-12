@@ -775,10 +775,10 @@
     margin-right: -9px;
 }
 
-.explorer button{
+.explorer button {
     border: 0;
     color: white;
-    background: linear-gradient( 100deg, #FF79DA, #9356DC);
+    background: linear-gradient(100deg, #ff79da, #9356dc);
     box-shadow: 5px 5px 10px 1px #d3d2d2;
     padding: 15px;
     border-radius: 2rem;
@@ -786,21 +786,29 @@
     cursor: pointer;
     display: block;
     margin: 0 auto;
-    transition: background-color 1s;
-}
-.explorer button:hover{
+    transition: background 1s;
+  }
+  .explorer button:hover {
     animation: button 0.6s both;
-}
-@keyframes button {
+  }
+  @keyframes button {
     0% {
-        box-shadow: 0 0 0 rgba(228,228,228,0.8);
-        background: linear-gradient (100deg,rgba(214,108,219,1), rgba(167,92,219,1));
-       }
-    100%{
-        box-shadow: 0 0 0 rgba(190, 190, 190, 0);
-        background: linear-gradient( 100deg, rgba(236, 122, 241, 0.877), rgba(178, 99, 235, 0.979));
-        }
-}
+      box-shadow: 0 0 0 rgba(228, 228, 228, 0.8);
+      background: linear-gradient(
+        100deg,
+        rgba(214, 108, 219, 1),
+        rgba(167, 92, 219, 1)
+      );
+    }
+    100% {
+      box-shadow: 0 0 0 rgba(190, 190, 190, 0);
+      background: linear-gradient(
+        100deg,
+        rgba(236, 122, 241, 0.877),
+        rgba(178, 99, 235, 0.979)
+      );
+    }
+  }
 
 .titre{
     padding-left: 29px;
@@ -1021,6 +1029,7 @@
 
 .bannieres {
     width: 100%;
+   
 } 
 
 .alignement{
@@ -1079,6 +1088,7 @@
     color: black;
 }
 
+
 .coeur{
     color: #353535;
     
@@ -1104,6 +1114,8 @@
         transition-property: opacity;
         text-decoration: none;
         opacity: 0;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     
     .coeur:hover .heartcolor{
