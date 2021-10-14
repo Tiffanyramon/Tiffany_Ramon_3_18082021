@@ -79,6 +79,7 @@
         align-items: flex-end;
         font-weight: 700;
         font-size: 18px!important;
+        margin-right: 10px!important;
     }
    
 
@@ -595,7 +596,7 @@
    width: 0;
    
 }
-.bannieres:hover .glissement{
+.bannieres1:hover .glissement{
     animation: glissement 0,5s forwards;
 
 }
