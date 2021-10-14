@@ -401,7 +401,7 @@
     margin-left: 20px;
 }
 
-.bannieres1{
+.bannieres{
     background-color: white;
     border-radius: 0.8rem;
     margin: 1rem;
@@ -413,142 +413,43 @@
     animation: apparition 0,5s forwards;
     animation-delay: 0;
 }
-.bannieres1 {
+.un{
     animation-delay: 0,4s;
 }
-.bannieres2{
-    background-color: white;
-    border-radius: 0.8rem;
-    margin: 1rem;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    overflow: hidden;
-    animation: apparition 0,5s forwards;
-    animation-delay: 0;
-}
-.bannieres2{
+
+.deux{
     animation-delay: 0,8s;
 }
-.bannieres3{
-    background-color: white;
-    border-radius: 0.8rem;
-    margin: 1rem;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    overflow: hidden;
-    animation: apparition 0,5s forwards;
-    animation-delay: 0;
-}
-.bannieres3{
+
+.trois{
     animation-delay: 0,12s;
 }
-.bannierestrois{
-    background-color: white;
-    border-radius: 0.8rem;
-    margin: 1rem;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    overflow: hidden;
-    animation: apparition 0,5s forwards;
-    animation-delay: 0;
-}
-.bannierestrois{
+
+.troisdemi{
     animation-delay: 0,14s;
 }
-.bannieres4{
-    background-color: white;
-    border-radius: 0.8rem;
-    margin: 1rem;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    overflow: hidden;
-    animation: apparition 0,5s forwards;
-    animation-delay: 0;
-}
-.bannieres4{
+
+.quatre{
     animation-delay: 0,16s;
 }
-.bannieres5{
-    background-color: white;
-    border-radius: 0.8rem;
-    margin: 1rem;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    overflow: hidden;
-    animation: apparition 0,5s forwards;
-    animation-delay: 0;
-}
-.bannieres5{
+
+.cinq{
     animation-delay: 0,20s;
 }
-.bannieres6{
-    background-color: white;
-    border-radius: 0.8rem;
-    margin: 1rem;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    overflow: hidden;
-    animation: apparition 0,5s forwards;
-    animation-delay: 0;
-}
-.bannieres6{
+
+.six{
     animation-delay: 0,24s;
 }
-.bannieres7{
-    background-color: white;
-    border-radius: 0.8rem;
-    margin: 1rem;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    overflow: hidden;
-    animation: apparition 0,5s forwards;
-    animation-delay: 0;
-}
-.bannieres7{
+
+.sept{
     animation-delay: 0,28s;
 }
-.bannieres8{
-    background-color: white;
-    border-radius: 0.8rem;
-    margin: 1rem;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    overflow: hidden;
-    animation: apparition 0,5s forwards;
-    animation-delay: 0;
-}
-.bannieres8{
+
+.huit{
     animation-delay: 0,32s;
 }
-.bannieres9{
-    background-color: white;
-    border-radius: 0.8rem;
-    margin: 1rem;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    overflow: hidden;
-    animation: apparition 0,5s forwards;
-    animation-delay: 0;
-}
-.bannieres9{
+
+.neuf{
     animation-delay: 0,36s;
 }
 
@@ -596,7 +497,7 @@
    width: 0;
    
 }
-.bannieres1:hover .glissement{
+.bannieres:hover .glissement{
     animation: glissement 0,5s forwards;
 
 }
