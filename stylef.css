@@ -79,7 +79,6 @@
         align-items: flex-end;
         font-weight: 700;
         font-size: 18px!important;
-        margin-right: 10px!important;
     }
    
 
@@ -349,7 +348,7 @@
 .logooh{
     width: 200px;
     display: block;
-    margin-left: 457px;
+    margin-left: auto;
     margin-right: auto;
     padding-top: 27px;
     padding-bottom: 25px; 
@@ -369,8 +368,9 @@
     margin-right:-3px;
 }
 .image{
-    width: 101%;
+    width: 100%;
     height: 550px;
+    object-fit: cover;
 }
 
 .menu{
@@ -410,47 +410,48 @@
     justify-content: space-between;
     flex-direction: row;
     overflow: hidden;
-    animation: apparition 0,5s forwards;
+    animation: apparition 0.5s forwards;
     animation-delay: 0;
+    opacity: 0;
 }
 .un{
-    animation-delay: 0,4s;
+    animation-delay: 0.4s;
 }
 
 .deux{
-    animation-delay: 0,8s;
+    animation-delay: 0.8s;
 }
 
 .trois{
-    animation-delay: 0,12s;
+    animation-delay: 1.2s;
 }
 
 .troisdemi{
-    animation-delay: 0,14s;
+    animation-delay: 1.4s;
 }
 
 .quatre{
-    animation-delay: 0,16s;
+    animation-delay: 1.6s;
 }
 
 .cinq{
-    animation-delay: 0,20s;
+    animation-delay: 2.0s;
 }
 
 .six{
-    animation-delay: 0,24s;
+    animation-delay: 2.4s;
 }
 
 .sept{
-    animation-delay: 0,28s;
+    animation-delay: 2.8s;
 }
 
 .huit{
-    animation-delay: 0,32s;
+    animation-delay: 3.2s;
 }
 
 .neuf{
-    animation-delay: 0,36s;
+    animation-delay: 3.6s;
 }
 
 @keyframes apparition  {
@@ -495,10 +496,12 @@
    background: #99E2D0;
    height: 100%;
    width: 0;
+   margin-left: 10px;
+   justify-content: center;
    
 }
 .bannieres:hover .glissement{
-    animation: glissement 0,5s forwards;
+    animation: glissement 0.5s forwards;
 
 }
 @keyframes glissement{
@@ -518,7 +521,7 @@
 }
 
 .bannieres:hover .fa-check-circle{
-    animation: rotateCirle 0,5s forwards;
+    animation: rotateCircle 0.5s forwards;
 }
 @keyframes rotateCircle {
     from {
