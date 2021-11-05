@@ -290,6 +290,8 @@
     .basdepage{
         background-color: #353535;
         margin-top: 48px!important;
+        margin-left: -9px!important;
+        margin-right: -9px!important;
     }
 
     .logo{

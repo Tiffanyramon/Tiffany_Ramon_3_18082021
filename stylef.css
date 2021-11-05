@@ -6,10 +6,7 @@
 
     .logooh{
         display: block!important;
-        margin-left: auto!important;
-        padding-top: 20px!important;
-        padding-bottom: 20px!important; 
-        
+        margin-left: auto!important; 
     }
     .fa-arrow-left{
         left: 30px!important;
@@ -173,12 +170,9 @@
 
 
     .logooh{
-        width: 200px!important;
+        width: 217px!important;
         display: block!important;
         margin-left: auto!important;
-        padding-top: 20px!important;
-        padding-bottom: 20px!important; 
-        height: 35px!important; 
         justify-content: center;
         align-content: center;
     }
@@ -341,9 +335,7 @@
 }
 
 /* Version desktop*/
-
-
-        
+    
     
 .logooh{
     width: 200px;
@@ -352,7 +344,6 @@
     margin-right: auto;
     padding-top: 27px;
     padding-bottom: 25px; 
-    height: 52px; 
 }
 .fa-arrow-left{
     left: 30px;
@@ -372,6 +363,7 @@
     height: 550px;
     object-fit: cover;
 }
+
 
 .menu{
     background-color: #f6f6f6;
@@ -396,6 +388,8 @@
     justify-content: space-between;
     align-items: center;
     font-size: 27px;
+    font-family: 'Shrikhand';
+    
 }
 .restaurant h3{
     margin-left: 20px;
@@ -411,7 +405,6 @@
     flex-direction: row;
     overflow: hidden;
     animation: apparition 0.5s forwards;
-    animation-delay: 0;
     opacity: 0;
 }
 .un{
